@@ -38,7 +38,7 @@ For ease of testing following maven profiles are present:
 1. checkout git project (master branch)
 2. navigate to "root" of the project.
 3. mvn deploy +MAVEN_PROFILE(s)
-4. check result in localhost:8080
+4. check result in localhost:8000
 
 # results (what is displayed when accessing localhost:8000)
 
