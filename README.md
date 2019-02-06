@@ -28,6 +28,7 @@ For ease of testing following profiles are present:
 - overlay - deploys overlay to jetty server as overlay
 
 - allDeps - explicitly includes all dependencies (compile scope) used by module
+          - profile defined in each of "war-modules" - which is, module-a-war, module-b-war and overlay
 ````
 "allDeps" profile is more of a hack - and cannot be considered as a workaround (especially in war overlay scenario)
 
