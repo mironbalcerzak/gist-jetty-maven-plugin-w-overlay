@@ -21,7 +21,7 @@ project contains 4 major modules:
 ```
 
 # maven configuration
-For ease of testing following profiles are present:
+For ease of testing following maven profiles are present:
 ````
 - moduleA - deploys moduleA to jetty server (no overlay)
 - moduleB - deploys moduleB to jetty server (no overlay)
