@@ -12,12 +12,12 @@ project contains 4 major modules:
 2. module-a
     2.1. module-a-api
     2.2. module-a-impl
-    2.3. module-a-war
+    2.3. module-a-war (jetty)
 3. module-b
-    3.1. module-b-api
+    3.1. module-b-api 
     3.2. module-b-impl
-    3.3. module-b-war
-4. war-jetty (overlay)
+    3.3. module-b-war (jetty)
+4. overlay (jetty)
 ```
 
 # maven configuration
