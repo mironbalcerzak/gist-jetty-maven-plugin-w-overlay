@@ -39,7 +39,7 @@ For ease of testing following profiles are present:
 3. mvn deploy +MAVEN_PROFILE(s)
 4. check result in localhost:8080
 
-# results (localhost:8080)
+# results (what is displayed when accessing localhost:8000)
 
 
 #### mvn deploy -PmoduleA
