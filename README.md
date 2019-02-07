@@ -1,3 +1,7 @@
+# reported issue
+
+https://github.com/eclipse/jetty.project/issues/3332
+
 # project description
 
 Possible bug spotted in jetty-maven-plugin (v.9.4.14.v20181114).
