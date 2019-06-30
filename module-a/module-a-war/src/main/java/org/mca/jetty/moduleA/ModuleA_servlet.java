@@ -14,6 +14,8 @@ public class ModuleA_servlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+        System.out.println("ModuleA_servlet - called");
+        moduleA.callMe();
         resp.setContentType("text/html");
         PrintWriter out = resp.getWriter();
         out.println("<h3>ModuleA: Hello World</h3>");

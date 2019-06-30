@@ -1,10 +1,11 @@
 # reported issue
 
-https://github.com/eclipse/jetty.project/issues/3332
+https://github.com/eclipse/jetty.project/issues/3332 (resolved)
+https://github.com/eclipse/jetty.project/issues/3725
 
 # project description
 
-Possible bug spotted in jetty-maven-plugin (v.9.4.14.v20181114).
+Bug spotted in jetty-maven-plugin (v.9.4.14.v20181114).
 
 _jetty-maven-plugin_ is resolving dependencies without transitions (even if those are present). 
 
@@ -42,9 +43,9 @@ For ease of testing following maven profiles are present:
 1. checkout git project (master branch)
 2. navigate to "root" of the project.
 3. mvn deploy +MAVEN_PROFILE(s)
-4. check result in localhost:8000
+4. check result in localhost:8080
 
-# results (what is displayed when accessing localhost:8000)
+# results (what is displayed when accessing localhost:8080)
 
 
 #### mvn deploy -PmoduleA
