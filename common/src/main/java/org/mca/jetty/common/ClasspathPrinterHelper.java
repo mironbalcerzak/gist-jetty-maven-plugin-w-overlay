@@ -11,9 +11,14 @@ public final class ClasspathPrinterHelper {
         out.println(format("java.lang.Exception"));
         out.println(format("javax.servlet.http.HttpServlet"));
         out.println("</pre>");
-        out.println("<h5>Overlaid war file</h5>");
+        out.println("<h5>Overlay module</h5>");
         out.println("<pre>");
         out.println(format("org.mca.jetty.overlay.Overlay_servlet"));
+        out.println(format("org.mca.jetty.overlay.OverlayNested_servlet"));
+        out.println("</pre>");
+        out.println("<h5>Common</h5>");
+        out.println("<pre>");
+        out.println(format("org.mca.jetty.common.Common"));
         out.println("</pre>");
         out.println("<h5>Module A</h5>");
         out.println("<pre>");
@@ -26,6 +31,12 @@ public final class ClasspathPrinterHelper {
         out.println(format("org.mca.jetty.moduleB.ModuleB_api"));
         out.println(format("org.mca.jetty.moduleB.ModuleB_impl"));
         out.println(format("org.mca.jetty.moduleB.ModuleB_servlet"));
+        out.println("</pre>");
+        out.println("<h5>Module C</h5>");
+        out.println("<pre>");
+        out.println(format("org.mca.jetty.moduleC.ModuleC_api"));
+        out.println(format("org.mca.jetty.moduleC.ModuleC_impl"));
+        out.println(format("org.mca.jetty.moduleC.ModuleC_servlet"));
         out.println("</pre>");
     }
 

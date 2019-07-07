@@ -10,7 +10,7 @@ Bug spotted in jetty-maven-plugin (v.9.4.14.v20181114).
 _jetty-maven-plugin_ is resolving dependencies without transitions (even if those are present). 
 
 # project structure
-project contains 4 major modules:
+project contains 5 major modules:
 
 ```
 1. common
@@ -23,6 +23,12 @@ project contains 4 major modules:
     3.2. module-b-impl
     3.3. module-b-war (jetty)
 4. overlay (jetty)
+5. overlay2 (pom)
+    5.1. module-c
+        5.1.1 module-c-api
+        5.1.2 module-c-impl
+        5.1.3 module-c-war
+    5.2 overlay-nested (jetty)
 ```
 
 # maven configuration
@@ -30,7 +36,9 @@ For ease of testing following maven profiles are present:
 ````
 - moduleA - deploys moduleA to jetty server (no overlay)
 - moduleB - deploys moduleB to jetty server (no overlay)
+- moduleC - deploys moduleC to jetty server (no overlay)
 - overlay - deploys overlay to jetty server as overlay
+- overlayNested - deploys overlay to jetty server as overlay
 
 - allDeps - explicitly includes all dependencies (compile scope) used by war module
           - profile defined in each of "war-modules" - which is, module-a-war, module-b-war and overlay

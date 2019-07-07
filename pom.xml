@@ -13,6 +13,7 @@
         <module>module-a</module>
         <module>module-b</module>
         <module>overlay</module>
+        <module>overlay2</module>
     </modules>
 
     <properties>
