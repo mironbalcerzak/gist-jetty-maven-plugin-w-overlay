@@ -9,6 +9,7 @@
     </parent>
     <artifactId>module-c</artifactId>
     <packaging>pom</packaging>
+    <name>overlay2 :: module-c</name>
 
     <modules>
         <module>module-c-api</module>

@@ -8,6 +8,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <artifactId>module-b-impl</artifactId>
+    <name>module-b :: impl</name>
 
     <dependencies>
         <dependency>

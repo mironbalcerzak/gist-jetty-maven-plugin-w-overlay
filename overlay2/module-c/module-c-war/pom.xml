@@ -8,6 +8,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <artifactId>module-c-war</artifactId>
+    <name>overlay2 :: module-c :: war (jetty)</name>
     <packaging>war</packaging>
 
     <dependencies>

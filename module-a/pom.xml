@@ -9,6 +9,7 @@
     </parent>
     <artifactId>module-a</artifactId>
     <packaging>pom</packaging>
+    <name>module-a</name>
 
     <modules>
         <module>module-a-api</module>

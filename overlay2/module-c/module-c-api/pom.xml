@@ -8,5 +8,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <artifactId>module-c-api</artifactId>
+    <name>overlay2 :: module-c :: api</name>
+
 
 </project>

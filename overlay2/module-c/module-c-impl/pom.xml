@@ -8,6 +8,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <artifactId>module-c-impl</artifactId>
+    <name>overlay2 :: module-c :: impl</name>
 
     <dependencies>
         <dependency>

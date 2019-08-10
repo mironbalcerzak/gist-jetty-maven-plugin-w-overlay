@@ -9,10 +9,11 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
     <artifactId>overlay2</artifactId>
+    <name>overlay2</name>
 
     <modules>
         <module>module-c</module>
-        <module>overlay-nested</module>
+        <module>overlay2-war</module>
     </modules>
 
     <dependencyManagement>

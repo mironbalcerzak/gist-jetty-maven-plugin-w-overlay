@@ -9,6 +9,11 @@
         <servlet-name>moduleB_servlet</servlet-name>
         <servlet-class>org.mca.jetty.moduleB.ModuleB_servlet</servlet-class>
     </servlet>
+
+    <listener>
+        <listener-class>org.mca.jetty.common.ClasspathDisplayListener</listener-class>
+    </listener>
+
     <servlet-mapping>
         <servlet-name>moduleB_servlet</servlet-name>
         <url-pattern>/</url-pattern>

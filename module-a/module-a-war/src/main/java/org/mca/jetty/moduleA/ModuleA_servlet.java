@@ -1,6 +1,6 @@
 package org.mca.jetty.moduleA;
 
-import org.mca.jetty.common.ClasspathPrinterHelper;
+import org.mca.jetty.common.ClasspathAnalyzeHelper;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -10,15 +10,14 @@ import java.io.PrintWriter;
 
 public class ModuleA_servlet extends HttpServlet {
 
-    private final ModuleA_api moduleA = new ModuleA_impl();
+    private final ModuleA_api module = new ModuleA_impl();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        System.out.println("ModuleA_servlet - called");
-        moduleA.callMe();
         resp.setContentType("text/html");
-        PrintWriter out = resp.getWriter();
-        out.println("<h3>ModuleA: Hello World</h3>");
-        ClasspathPrinterHelper.print(out);
+        resp.getWriter().println("<html style=\"background-color:darkgray\">");
+        ClasspathAnalyzeHelper.print(resp.getWriter());
+        resp.getWriter().println("</html>");
+        module.callMe();
     }
 }

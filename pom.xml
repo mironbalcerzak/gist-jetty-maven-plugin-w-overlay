@@ -12,7 +12,7 @@
         <module>common</module>
         <module>module-a</module>
         <module>module-b</module>
-        <module>overlay</module>
+        <module>overlay1-war</module>
         <module>overlay2</module>
     </modules>
 
@@ -61,6 +61,18 @@
             <dependency>
                 <groupId>org.mca</groupId>
                 <artifactId>module-b-war</artifactId>
+                <version>${project.version}</version>
+                <type>war</type>
+            </dependency>
+            <dependency>
+                <groupId>org.mca</groupId>
+                <artifactId>overlay1-war</artifactId>
+                <version>${project.version}</version>
+                <type>war</type>
+            </dependency>
+            <dependency>
+                <groupId>org.mca</groupId>
+                <artifactId>overlay2-war</artifactId>
                 <version>${project.version}</version>
                 <type>war</type>
             </dependency>
