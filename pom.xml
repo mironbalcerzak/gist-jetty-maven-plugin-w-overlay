@@ -10,6 +10,7 @@
 
     <modules>
         <module>common</module>
+        <module>static</module>
         <module>module-a</module>
         <module>module-b</module>
         <module>overlay1-war</module>
@@ -31,6 +32,18 @@
                 <groupId>org.mca</groupId>
                 <artifactId>common</artifactId>
                 <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mca</groupId>
+                <artifactId>static</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mca</groupId>
+                <artifactId>static</artifactId>
+                <version>${project.version}</version>
+                <classifier>zip</classifier>
+                <type>zip</type>
             </dependency>
             <dependency>
                 <groupId>org.mca</groupId>

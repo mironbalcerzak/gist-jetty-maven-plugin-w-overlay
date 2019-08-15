@@ -35,6 +35,7 @@ public final class ClasspathAnalyzeHelper {
         retVal.computeIfAbsent("org.mca.jetty.overlay.Overlay1_servlet", ClasspathAnalyzeHelper::locateClass);
         retVal.computeIfAbsent("org.mca.jetty.overlay.Overlay2_servlet", ClasspathAnalyzeHelper::locateClass);
         retVal.computeIfAbsent("overlay-me.resource", ClasspathAnalyzeHelper::locateResource);
+        retVal.computeIfAbsent("static-1.resource", ClasspathAnalyzeHelper::locateResource);
         return retVal;
     }
 

@@ -31,6 +31,12 @@
             <artifactId>module-b-war</artifactId>
             <type>war</type>
         </dependency>
+        <dependency>
+            <groupId>org.mca</groupId>
+            <artifactId>static</artifactId>
+            <classifier>zip</classifier>
+            <type>zip</type>
+        </dependency>
     </dependencies>
 
     <profiles>
@@ -65,6 +71,13 @@
                                 <overlay>
                                     <groupId>org.mca</groupId>
                                     <artifactId>module-b-war</artifactId>
+                                </overlay>
+                                <overlay>
+                                    <groupId>org.mca</groupId>
+                                    <artifactId>static</artifactId>
+                                    <type>zip</type>
+                                    <classifier>zip</classifier>
+                                    <targetPath>/</targetPath>
                                 </overlay>
                             </overlays>
                         </configuration>
@@ -115,12 +128,17 @@
                                 <overlay>
                                     <groupId>org.mca</groupId>
                                     <artifactId>module-a-war</artifactId>
-                                    <targetPath>moved-a</targetPath>
                                 </overlay>
                                 <overlay>
                                     <groupId>org.mca</groupId>
                                     <artifactId>module-b-war</artifactId>
-                                    <targetPath>moved-b</targetPath>
+                                </overlay>
+                                <overlay>
+                                    <groupId>org.mca</groupId>
+                                    <artifactId>static</artifactId>
+                                    <type>zip</type>
+                                    <classifier>zip</classifier>
+                                    <targetPath>static</targetPath>
                                 </overlay>
                             </overlays>
                         </configuration>
